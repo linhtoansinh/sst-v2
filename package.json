@@ -18,7 +18,7 @@
     "version": "./.changeset/version",
     "release": "./.changeset/release",
     "release-snapshot": "./.changeset/snapshot",
-    "prepare": "husky install && npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
