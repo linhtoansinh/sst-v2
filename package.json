@@ -10,7 +10,18 @@
     "www"
   ],
   "files": [
-    "dist/*"
+    "/*.d.ts",
+    "/*.ts",
+    "/*.js",
+    "/cdk",
+    "/cli",
+    "/construct",
+    "/context",
+    "/node",
+    "/runtime",
+    "/stacks",
+    "/support",
+    "util"
   ],
   "scripts": {
     "build": "turbo run build --filter=!@sst/docs --filter=!@sst/console --filter=!@sst/cli-*",
