@@ -18,7 +18,7 @@
     "version": "./.changeset/version",
     "release": "./.changeset/release",
     "release-snapshot": "./.changeset/snapshot",
-    "prepare": "npm run build && mv packages/sst/dist dist"
+    "prepare": "npm run build && mv packages/sst/dist/* ."
   },
   "repository": {
     "type": "git",
