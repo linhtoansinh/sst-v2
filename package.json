@@ -9,13 +9,16 @@
     "packages/assets/*",
     "www"
   ],
+  "files": [
+    "packages/sst/dist/*"
+  ],
   "scripts": {
     "build": "turbo run build --filter=!@sst/docs --filter=!@sst/console --filter=!@sst/cli-*",
     "prettier": "prettier --cache -w --loglevel=error .",
     "version": "./.changeset/version",
     "release": "./.changeset/release",
     "release-snapshot": "./.changeset/snapshot",
-    "prepare": "husky install"
+    "prepare": "husky install && npm run build"
   },
   "repository": {
     "type": "git",
