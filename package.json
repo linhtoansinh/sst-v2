@@ -10,7 +10,7 @@
     "www"
   ],
   "files": [
-    "packages/sst/dist/*"
+    "dist/*"
   ],
   "scripts": {
     "build": "turbo run build --filter=!@sst/docs --filter=!@sst/console --filter=!@sst/cli-*",
@@ -18,7 +18,7 @@
     "version": "./.changeset/version",
     "release": "./.changeset/release",
     "release-snapshot": "./.changeset/snapshot",
-    "prepare": "npm run build"
+    "prepare": "npm run build && mv packages/sst/dist dist"
   },
   "repository": {
     "type": "git",

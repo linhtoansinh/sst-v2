@@ -5,6 +5,7 @@ node_modules
 cdk.out
 .DS_Store
 dist
+!/dist
 .vscode
 .idea
 !packages/sst/dist
