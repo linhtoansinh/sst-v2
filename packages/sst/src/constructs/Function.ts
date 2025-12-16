@@ -1093,6 +1093,11 @@ export class Function extends CDKFunction implements SSTConstruct {
           cfnFunction.code = {
             imageUri: codeConfig.image?.imageUri,
           };
+          if (codeConfig.image?.cmd) {
+            cfnFunction.imageConfig = {
+              command: codeConfig.image.cmd,
+            };
+          }
           delete cfnFunction.runtime;
           delete cfnFunction.handler;
           code.bindToResource(cfnFunction);
